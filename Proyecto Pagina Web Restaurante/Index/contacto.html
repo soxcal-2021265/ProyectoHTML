@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Sabor Elegante</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Fonts/fonts.css">
+    <link rel="stylesheet" href="../Fonts/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../Images/LogoRestaurant.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Images/LogoRestaurant.png" alt="Sabor Elegante" class="logo-img">
+            <div>
+                <h1>Mahallo</h1>
+                <p>Donde cada bocado es una experiencia</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="cocineros.html">Nuestros Chefs</a></li>
+                <li><a href="historia.html">Nuestra Historia</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+                <li><a href="#" class="reserva-btn">Reservaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-header">
+        <h2>Contáctanos</h2>
+        <p>Estamos aquí para hacer de tu experiencia algo memorable</p>
+    </section>
+
+    <section class="contact-container">
+        <div class="contact-info">
+            <h3>Información de contacto</h3>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Calle Gourmet 123, Ciudad, País</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+502 87564121</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@saborelegante.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <p>Lunes a Viernes: 12pm - 11pm<br>Sábados: 11am - 12am<br>Domingos: 11am - 10pm</p>
+            </div>
+            <div class="social-contact">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Envíanos un mensaje</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Teléfono (opcional)">
+                </div>
+                <div class="form-group">
+                    <select id="subject" required>
+                        <option value="" disabled selected>Selecciona un asunto</option>
+                        <option value="reservation">Reservación</option>
+                        <option value="event">Evento privado</option>
+                        <option value="feedback">Comentarios</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <h3>Encuéntranos</h3>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209179535!2d-73.987844924537!3d40.74844097138988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629997977653!5m2!1sen!2sus" 
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="../Images/LogoRestaurant.png" alt="Sabor Elegante" class="footer-logo">
+                <p>Transformando ingredientes en experiencias desde 1998.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Horario</h3>
+                <p>Lunes a Viernes: 12pm - 11pm</p>
+                <p>Sábados: 11am - 12am</p>
+                <p>Domingos: 11am - 10pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Calle Gourmet 123, Ciudad</p>
+                <p><i class="fas fa-phone"></i> +502 87564121</p>
+                <p><i class="fas fa-envelope"></i> info@saborelegante.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Sabor Elegante. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../Scripts/script.js"></script>
+</body>
+</html>

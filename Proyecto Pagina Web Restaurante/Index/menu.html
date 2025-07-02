@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Sabor Elegante</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Fonts/fonts.css">
+    <link rel="stylesheet" href="../Fonts/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../Images/LogoRestaurant.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Images/LogoRestaurant.png" alt="Sabor Elegante" class="logo-img">
+            <div>
+                <h1>Mahallo</h1>
+                <p>Donde cada bocado es una experiencia</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html" class="active">Menú</a></li>
+                <li><a href="cocineros.html">Nuestros Chefs</a></li>
+                <li><a href="historia.html">Nuestra Historia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#" class="reserva-btn">Reservaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu-header">
+        <h2>Nuestro Menú</h2>
+        <p>Explora nuestra exquisita selección de platos preparados con los ingredientes más frescos</p>
+        <div class="category-filter">
+            <button class="filter-btn active" data-category="all">Todo</button>
+            <button class="filter-btn" data-category="entradas">Entradas</button>
+            <button class="filter-btn" data-category="principales">Platos Principales</button>
+            <button class="filter-btn" data-category="postres">Postres</button>
+            <button class="filter-btn" data-category="bebidas">Bebidas</button>
+        </div>
+    </section>
+
+    <section class="products-grid expanded menu-grid" id="menuPage1">
+        <!-- Página 1 -->
+        <div class="product-card" data-category="entradas">
+            <img src="../Images/ImagenCarpaccio.jpeg" alt="Carpaccio de res" class="product-img">
+            <h3>Carpaccio de Res</h3>
+            <p class="description">Finas láminas de res con rúcula, parmesano y alcaparras</p>
+            <p class="price">Q160.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="entradas">
+            <img src="../Images/Imagen2comida.jpg" alt="Bruschetta" class="product-img">
+            <h3>Bruschetta Clásica</h3>
+            <p class="description">Pan tostado con tomate fresco, albahaca y aceite de oliva</p>
+            <p class="price">Q120.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="entradas">
+            <img src="../Images/ImagenTartaAtun.jpg" alt="Tartar de atún" class="product-img">
+            <h3>Tartar de Atún</h3>
+            <p class="description">Atún fresco con aguacate, sésamo y salsa de soja</p>
+            <p class="price">Q180.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/FileteMilgon.jpeg" alt="Filete mignon" class="product-img">
+            <h3>Filete Mignon</h3>
+            <p class="description">Corte premium con reducción de vino tinto y puré de papas</p>
+            <p class="price">Q320.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenSlamonParrila.jpeg" alt="Salmón a la parrilla" class="product-img">
+            <h3>Salmón a la Parrilla</h3>
+            <p class="description">Con espárragos y salsa de eneldo</p>
+            <p class="price">Q260.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenRaviolis.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Raviolis de Hongos</h3>
+            <p class="description">Rellenos de mezcla de hongos con salsa de trufa</p>
+            <p class="price">Q220.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenPizzaCmaarones.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Pizza de camaron</h3>
+            <p class="description">Pizza rellan de queso y camarones a las brasas</p>
+            <p class="price">Q150.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenPizzaPepperoni.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Pizza de Pepperoni</h3>
+            <p class="description">Pizza rellan de queso y Pepperonis</p>
+            <p class="price">Q150.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenSlamonCostra.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Salmón en costra de almendras</h3>
+            <p class="description">Filete de salmón horneado con una cobertura crujiente de almendras, servido con puré de papas y espárragos.</p>
+            <p class="price">Q200.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenMagret.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Magret de pato con salsa de frutos rojos</h3>
+            <p class="description">Pechuga de pato cocida al punto, con una salsa agridulce de frutos del bosque que realza su sabor intenso.</p>
+            <p class="price">Q150.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenRaviolis2.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Ravioles de trufa negra</h3>
+            <p class="description">Pasta rellena de queso ricotta o setas finas, bañada en una salsa de mantequilla y trufa negra.</p>
+            <p class="price">Q100.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenHigos.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Foie Gras con higos caramelizados</h3>
+            <p class="description">Hígado de pato o ganso cocinado suavemente, servido con higos dulces y reducción de balsámico.</p>
+            <p class="price">Q150.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenCarrilleras.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Carrilleras de ternera al vino tinto</h3>
+            <p class="description">Carne cocinada por horas hasta quedar suave y jugosa, acompañada de un puré rústico y salsa intensa de vino.</p>
+            <p class="price">Q150.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenPolloRelleno.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Pollo relleno de espinaca y queso brie</h3>
+            <p class="description">Pechuga de pollo horneada con un delicado relleno de espinaca fresca y queso brie fundido.</p>
+            <p class="price">Q200.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenLasaña.jpg" alt="Raviolis de hongos" class="product-img">
+            <h3>Lasaña de cordero y berenjena</h3>
+            <p class="description">Capas de pasta fina, ragú de cordero especiado y berenjena asada con salsa bechamel ligera.</p>
+            <p class="price">Q75.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/CremeImagen.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Crème Brûlée</h3>
+            <p class="description">Postre francés de crema horneada con una fina capa de azúcar caramelizada en la superficie.</p>
+            <p class="price">Q95.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenTiramisu.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Tiramisú</h3>
+            <p class="description">Delicado pastel italiano hecho con capas de bizcocho empapado en café y crema de mascarpone.</p>
+            <p class="price">Q45.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/MousseImagen.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Mousse de chocolate amargo</h3>
+            <p class="description">Espuma cremosa de chocolate intenso, decorada con virutas y frutas rojas.</p>
+            <p class="price">Q50.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenMilhojas de vainilla.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Milhojas de vainilla</h3>
+            <p class="description">Capas finas de hojaldre con crema pastelera suave y glasé en la parte superior.</p>
+            <p class="price">Q65.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenPanna Cotta de vainilla con coulis de frutos rojos.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Panna Cotta de vainilla con coulis de frutos rojos</h3>
+            <p class="description">Postre italiano cremoso servido con salsa de frutas ácidas.</p>
+            <p class="price">Q35.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenMacarons franceses.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Macarons franceses</h3>
+            <p class="description">Galletas ligeras de almendra rellenas de ganache, crema o mermelada, disponibles en varios sabores.</p>
+            <p class="price">Q85.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenTarta Tatin de manzana.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Tarta Tatin de manzana</h3>
+            <p class="description">Tarta invertida de manzana caramelizada, servida tibia con helado de vainilla.</p>
+            <p class="price">Q55.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenMimosa.jpg" alt="Raviolis de hongos" class="product-img">
+            <h3>Mimosa</h3>
+            <p class="description">Mezcla de champán con jugo de naranja natural, perfecta para brunch o celebraciones.</p>
+            <p class="price">Q99.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenMartini seco.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Martini seco</h3>
+            <p class="description">Clásico cóctel con ginebra y vermut seco, decorado con una aceituna o twist de limón.</p>
+            <p class="price">Q55.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenNegroni.jpg" alt="Raviolis de hongos" class="product-img">
+            <h3>Negroni</h3>
+            <p class="description">Bebida italiana con ginebra, vermut rojo y Campari, servido con hielo y rodaja de naranja.</p>
+            <p class="price">Q55.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenSangría de vino tinto gourmet.jpg" alt="Raviolis de hongos" class="product-img">
+            <h3>Sangría de vino tinto gourmet</h3>
+            <p class="description">Vino tinto con frutas frescas, un toque de licor y especias, servido frío.</p>
+            <p class="price">Q60.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenLimonada de lavanda.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Limonada de lavanda</h3>
+            <p class="description">Limonada casera infusionada con flores de lavanda, refrescante y aromática.</p>
+            <p class="price">Q55.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenMocktail de frutos rojos.jpeg" alt="Raviolis de hongos" class="product-img">
+            <h3>Mocktail de frutos rojos</h3>
+            <p class="description">Bebida sin alcohol elaborada con jugos naturales, soda y frutos del bosque.</p>
+            <p class="price">Q75.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+    </section>
+
+    <section class="products-grid expanded menu-grid" id="menuPage2" style="display:none;">
+        <!-- Página 2 -->
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenRibeye a la pimienta negra.jpeg" alt="Pollo al curry" class="product-img">
+            <h3>Ribeye a la pimienta negra</h3>
+            <p class="description">Corte grueso de carne de res, sellado y cocinado al punto, con salsa cremosa de pimienta negra.</p>
+            <p class="price">Q240.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/ImagenLasagna Tradicional.jpeg" alt="Lasagna" class="product-img">
+            <h3>Lasagna Tradicional</h3>
+            <p class="description">Capas de pasta con carne, queso y salsa boloñesa</p>
+            <p class="price">Q20.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="postres">
+            <img src="../Images/Tiramisú Clásico.jpeg" alt="Tiramisú" class="product-img">
+            <h3>Tiramisú Clásico</h3>
+            <p class="description">Postre italiano con café, mascarpone y cacao</p>
+            <p class="price">Q10.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="postres">
+            <img src="../Images/Merluza en salsa de azafrán.jpeg" alt="Crème brûlée" class="product-img">
+            <h3>Merluza en salsa de azafrán</h3>
+            <p class="description">Filete de merluza blanca servido sobre una delicada salsa amarilla de azafrán, con verduras al vapor.</p>
+            <p class="price">Q111.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="postres">
+            <img src="../Images/Cheesecake de Frutos Rojos.jpeg" alt="Cheesecake" class="product-img">
+            <h3>Cheesecake de Frutos Rojos</h3>
+            <p class="description">Tarta de queso con coulis de frutos del bosque</p>
+            <p class="price">Q225.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="bebidas">
+            <img src="../Images/CremeImagen.jpeg" alt="Vinos" class="product-img">
+            <h3>Cordero en costra de hierbas</h3>
+            <p class="description">Rack de cordero horneado con costra de hierbas frescas, servido con puré de coliflor.</p>
+            <p class="price">Q185.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+    </section>
+
+    <section class="products-grid expanded menu-grid" id="menuPage3" style="display:none;">
+        <!-- Página 3 -->
+        <div class="product-card" data-category="bebidas">
+            <img src="../Images/Cócteles Signature.jpg" alt="Cócteles" class="product-img">
+            <h3>Cócteles Signature</h3>
+            <p class="description">Nuestras creaciones exclusivas con licores premium</p>
+            <p class="price">Q85.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="bebidas">
+            <img src="../Images/Cervezas Artesanales.jpg" alt="Cervezas" class="product-img">
+            <h3>Cervezas Artesanales</h3>
+            <p class="description">Selección de las mejores cervezas locales</p>
+            <p class="price">Q75.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="entradas">
+            <img src="../Images/Calamares Crujientes.jpeg" alt="Calamares" class="product-img">
+            <h3>Calamares Crujientes</h3>
+            <p class="description">Aros de calamar con mayonesa de chipotle</p>
+            <p class="price">Q125.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="entradas">
+            <img src="../Images/Queso Fundido.jpg" alt="Queso fundido" class="product-img">
+            <h3>Queso Fundido</h3>
+            <p class="description">Mezcla de quesos con chorizo y tortillas frescas</p>
+            <p class="price">Q350.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="principales">
+            <img src="../Images/Pasta Trufada.jpg" alt="Pasta trufada" class="product-img">
+            <h3>Pasta Trufada</h3>
+            <p class="description">Fettuccine con salsa de crema y trufa negra</p>
+            <p class="price">$25.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+        <div class="product-card" data-category="postres">
+            <img src="../Images/Profiteroles.jpeg" alt="Profiteroles" class="product-img">
+            <h3>Profiteroles</h3>
+            <p class="description">Bollos de hojaldre rellenos de crema pastelera</p>
+            <p class="price">Q45.99</p>
+            <button class="add-to-cart view-details">Ver Detalles</button>
+        </div>
+    </section>
+
+    <section class="pagination">
+        <button class="page-btn active" data-page="1">1</button>
+        <button class="page-btn" data-page="2">2</button>
+        <button class="page-btn" data-page="3">3</button>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="../Images/LogoRestaurant.png" alt="Sabor Elegante" class="footer-logo">
+                <p>Transformando ingredientes en experiencias desde 1998.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Horario</h3>
+                <p>Lunes a Viernes: 12pm - 11pm</p>
+                <p>Sábados: 11am - 12am</p>
+                <p>Domingos: 11am - 10pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Calle Gourmet 123, Ciudad</p>
+                <p><i class="fas fa-phone"></i> +502 87564121</p>
+                <p><i class="fas fa-envelope"></i> info@saborelegante.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Sabor Elegante. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="dishModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img src="" alt="" id="modalDishImage" class="modal-dish-img">
+                <div class="modal-dish-info">
+                    <h2 id="modalDishTitle"></h2>
+                    <p class="modal-dish-price" id="modalDishPrice"></p>
+                    <div class="modal-dish-ingredients">
+                        <h3>Ingredientes</h3>
+                        <ul id="modalDishIngredients">
+                        </ul>
+                    </div>
+                    <div class="modal-dish-description">
+                        <h3>Descripción</h3>
+                        <p id="modalDishDescription"></p>
+                    </div>
+                    <button class="btn add-to-cart">Añadir al pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Elegante - Experiencia gastronómica única</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Fonts/fonts.css">
+    <link rel="stylesheet" href="../Fonts/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../Images/LogoRestaurant.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Images/LogoRestaurant.png" alt="Sabor Elegante" class="logo-img">
+            <div>
+                <h1>Mahallo</h1>
+                <p>Donde cada bocado es una experiencia</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="cocineros.html">Nuestros Chefs</a></li>
+                <li><a href="historia.html">Nuestra Historia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#" class="reserva-btn">Reservaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="../Video/VideoInicio.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        <div class="hero-content">
+            <h2>Una experiencia gastronómica inolvidable</h2>
+            <p>Descubre los sabores que han hecho de nuestro restaurante un referente culinario</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn">Ver Menú</a>
+                <a href="#" class="btn btn-outline">Reservar Mesa</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Platos Destacados</h2>
+        <div class="products-grid">
+            <div class="product-card" data-category="entradas">
+                <img src="../Images/TartaSalmon.jpg" alt="Tartar de salmón" class="product-img">
+                <h3>Tartar de Salmón</h3>
+                <p class="description">Fresco salmón marinado con hierbas finas y toques cítricos</p>
+                <p class="price">$18.99</p>
+                <button class="add-to-cart view-details">Ver Detalles</button>
+            </div>
+            <div class="product-card" data-category="principales">
+                <img src="../Images/RisotodeHongos.jpeg" alt="Risotto de hongos" class="product-img">
+                <h3>Risotto de Hongos</h3>
+                <p class="description">Arborio cremoso con mezcla de hongos silvestres y trufa</p>
+                <p class="price">$22.99</p>
+                <button class="add-to-cart view-details">Ver Detalles</button>
+            </div>
+            <div class="product-card" data-category="postres">
+                <img src="../Images/SouffleChoclate.jpg" alt="Soufflé de chocolate" class="product-img">
+                <h3>Soufflé de Chocolate</h3>
+                <p class="description">Clásico francés con corazón fundente y helado de vainilla</p>
+                <p class="price">$12.99</p>
+                <button class="add-to-cart view-details">Ver Detalles</button>
+            </div>
+        </div>
+        <a href="menu.html" class="btn btn-secundary">Ver Menú Completo</a>
+    </section>
+
+    <section class="chefs-preview">
+        <div class="chef-text">
+            <h2>Nuestros Maestros del Sabor</h2>
+            <p>Conoce a los talentosos chefs que crean magia en nuestra cocina con ingredientes frescos y técnicas innovadoras.</p>
+            <a href="cocineros.html" class="btn">Conoce al equipo</a>
+        </div>
+        <div class="chef-image">
+            <img src="../Images/ChefProfesional.jpg" alt="Chef preparando plato">
+            <div class="experience-badge">
+                <span>25+</span>
+                <p>Años de experiencia</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Lo que dicen nuestros comensales</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial active">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"La mejor experiencia gastronómica de mi vida. Cada plato era una obra de arte y el servicio impecable."</p>
+                <p class="author">- Ana Martínez</p>
+            </div>
+            <div class="testimonial">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"El risotto de hongos es simplemente celestial. Volveré una y otra vez."</p>
+                <p class="author">- Carlos Rodríguez</p>
+            </div>
+            <div class="testimonial">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>"Ambiente elegante pero acogedor. Perfecto para una cena especial."</p>
+                <p class="author">- Laura Gómez</p>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Únete a nuestro Club Gastronómico</h2>
+        <p>Recibe ofertas exclusivas, eventos especiales y novedades del menú directamente en tu correo.</p>
+        <form id="newsletter-form">
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <button type="submit" class="btn">Suscribirse</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="../Images/LogoRestaurant.png" alt="Sabor Elegante" class="footer-logo">
+                <p>Transformando ingredientes en experiencias desde 1998.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Horario</h3>
+                <p>Lunes a Viernes: 12pm - 11pm</p>
+                <p>Sábados: 11am - 12am</p>
+                <p>Domingos: 11am - 10pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Calle Gourmet 123, Ciudad</p>
+                <p><i class="fas fa-phone"></i> +502 87564121</p>
+                <p><i class="fas fa-envelope"></i> info@saborelegante.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Sabor Elegante. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="dishModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img src="" alt="" id="modalDishImage" class="modal-dish-img">
+                <div class="modal-dish-info">
+                    <h2 id="modalDishTitle"></h2>
+                    <p class="modal-dish-price" id="modalDishPrice"></p>
+                    <div class="modal-dish-ingredients">
+                        <h3>Ingredientes</h3>
+                        <ul id="modalDishIngredients">
+                        </ul>
+                    </div>
+                    <div class="modal-dish-description">
+                        <h3>Descripción</h3>
+                        <p id="modalDishDescription"></p>
+                    </div>
+                    <button class="btn add-to-cart">Añadir al pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Scripts/script.js"></script>
+</body>
+</html>
