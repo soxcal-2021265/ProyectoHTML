@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Concesionario de Motos</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Scroll suave para navegacion interna */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER / INICIO -->
+  <header id="inicio" class="header"> 
+    <div class="menu container">
+      <a href="#" class="logo">logo</a>
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+        <img src="imajenes/menu.png" class="menu-icono" alt="menu" />
+      </label> 
+      <nav class="navbar">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicio">Servicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contactos">Contactos</a></li>
+        </ul>
+      </nav>   
+    </div>
+
+    <div class="header-content container">
+      <div class="header-txt">
+        <h1>compra tu <span> moto </span><br />favorita</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Dolorum, rerum optio 
+          corrupti magnam non, adipisci qui maxime 
+          consequatur aspernatur, obcaecati nisi 
+          molestias labore deleniti blanditiis. 
+          Tenetur repellendus exercitationem commodivel.
+        </p>
+      </div>
+      <div class="butons">
+        <a href="#productos" class="bti">motos</a>
+        <a href="#contactos" class="bti">contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN DE SERVICIO -->
+  <section id="servicio" class="popular container">
+    <h2>nuestros servicios</h2>
+    <div class="popular-content">
+      <img src="imajenes/c1.png" alt="Servicio 1" />
+      <img src="imajenes/c2.png" alt="Servicio 2" />
+    </div>
+  </section> 
+
+  <!-- SECCIÓN DE PRODUCTOS -->
+  <main id="productos" class="product container">
+    <h2>todas las motos</h2>
+    <div class="product-content">
+
+      <div class="procut-1">
+        <img src="imajenes/mt10.jpeg" alt="MT-10" />
+        <div class="prduct-txt">
+          <h3>moto (MT-10)</h3>
+          <div class="price">
+            <p>$150,000</p>
+            <button class="btn-2">comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="procut-2">
+        <img src="imajenes/h2r.jpeg" alt="H2R" />
+        <div class="prduct-txt">
+          <h3>deportiva (H2R)</h3>
+          <div class="price">
+            <p>$500,000</p>
+            <button class="btn-2">comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="procut-3">
+        <img src="imajenes/pulsar200.jpeg" alt="Pulsar 200" />
+        <div class="prduct-txt">
+          <h3>semi-deportiva (Pulsar 200)</h3>
+          <div class="price">
+            <p>$50,000</p>
+            <button class="btn-2">comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="procut-4">
+        <img src="imajenes/pulsar250.jpeg" alt="Pulsar 250" />
+        <div class="prduct-txt">
+          <h3>moto para ruta (Pulsar 250)</h3>
+          <div class="price">
+            <p>$70,000</p>
+            <button class="btn-2">comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="procut-5">
+        <img src="imajenes/crf230.jpeg" alt="CRF 230" />
+        <div class="prduct-txt">
+          <h3>moto cross (CRF 230)</h3>
+          <div class="price">
+            <p>$90,000</p>
+            <button class="btn-2">comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="procut-6">
+        <img src="imajenes/crf250.jpeg" alt="CRF 250" />
+        <div class="prduct-txt">
+          <h3>moto cross dos tiempos (CRF 250)</h3>
+          <div class="price">
+            <p>$100,000</p>
+            <button class="btn-2">comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="procut-7">
+        <img src="imajenes/mt03.jpeg" alt="MT-03" />
+        <div class="prduct-txt">
+          <h3>deportiva (MT-03)</h3>
+          <div class="price">
+            <p>$55,000</p>
+            <button class="btn-2">comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="procut-8">
+        <img src="imajenes/mt09.jpeg" alt="MT-09" />
+        <div class="prduct-txt">
+          <h3>moto para competencia (MT-09)</h3>
+          <div class="price">
+            <p>$100,000</p>
+            <button class="btn-2">comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="procut-9">
+        <img src="imajenes/descarga.jpeg" alt="BMW" />
+        <div class="prduct-txt">
+          <h3>moto recorrido largo (BMW)</h3>
+          <div class="price">
+            <p>$50,000</p>
+            <button class="btn-2">comprar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Carrito de compras -->
+  <section class="carrito container" style="margin:40px auto; padding:20px; border:2px solid #ccc; border-radius:10px; max-width:600px;">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito" style="list-style:none; padding-left:0;"></ul>
+    <p id="total-carrito" style="font-weight:bold; font-size:1.2em;"></p>
+    <button onclick="vaciarCarrito()" class="btn-2" style="margin-right:10px;">Vaciar carrito</button>
+    <button onclick="abrirModal()" class="btn-2">Pagar ahora</button>
+  </section>
+
+  <!-- Modal de Pago -->
+  <div id="modalPago" class="payment-modal">
+    <div class="payment-content">
+      <span class="close-payment" onclick="cerrarModal()">&times;</span>
+      <h2>Formulario de Pago</h2>
+      <form onsubmit="procesarPago(event)">
+        <input type="text" placeholder="Nombre completo" required />
+        <input type="text" placeholder="Número de tarjeta" maxlength="16" required />
+        <input type="text" placeholder="MM/AA" required />
+        <input type="text" placeholder="CVV" maxlength="4" required />
+        <button type="submit">Confirmar pago</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Contacto -->
+  <section id="contactos" class="contact container">
+    <div class="contact-content">
+      <h3>Si te han gustado este tipo de motos no olvides seguirnos en nuestras páginas en línea</h3>
+      <form>
+        <input type="email" placeholder="Escribe una dirección personal" />
+        <input type="submit" class="btn-3" value="enviar" />
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <div class="link">
+      <a href="#" class="logo">logo</a>
+    </div>
+    <div class="link">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicio">Servicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contactos">Contactos</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const carrito = [];
+
+    function agregarAlCarrito(nombre, precio) {
+      carrito.push({ nombre, precio });
+      mostrarCarrito();
+    }
+
+    function eliminarDelCarrito(index) {
+      carrito.splice(index, 1);
+      mostrarCarrito();
+    }
+
+    function vaciarCarrito() {
+      carrito.length = 0;
+      mostrarCarrito();
+    }
+
+    function mostrarCarrito() {
+      const lista = document.getElementById("lista-carrito");
+      const totalCarrito = document.getElementById("total-carrito");
+      lista.innerHTML = "";
+      let total = 0;
+
+      carrito.forEach((item, index) => {
+        const li = document.createElement("li");
+        li.style.marginBottom = "10px";
+        li.innerHTML = `
+          ${index + 1}. ${item.nombre} - $${item.precio.toLocaleString()}
+          <button onclick="eliminarDelCarrito(${index})" style="margin-left:10px; background:red; color:#fff; padding:5px 10px; border:none; border-radius:5px;">Eliminar</button>
+        `;
+        lista.appendChild(li);
+        total += item.precio;
+      });
+
+      totalCarrito.textContent = `Total: $${total.toLocaleString()}`;
+    }
+
+    // Modal de Pago
+    function abrirModal() {
+      document.getElementById("modalPago").style.display = "block";
+    }
+    function cerrarModal() {
+      document.getElementById("modalPago").style.display = "none";
+    }
+    function procesarPago(e) {
+      e.preventDefault();
+      alert("¡Pago procesado exitosamente! Gracias por tu compra.");
+      vaciarCarrito();
+      cerrarModal();
+    }
+    window.onclick = function(event) {
+      const modal = document.getElementById("modalPago");
+      if (event.target === modal) cerrarModal();
+    };
+
+    // Inicializar botones “comprar”
+    window.onload = () => {
+      document.querySelectorAll(".btn-2").forEach(btn => {
+        btn.addEventListener("click", e => {
+          const card = e.target.closest(".procut-1, .procut-2, .procut-3, .procut-4, .procut-5, .procut-6, .procut-7, .procut-8, .procut-9");
+          if (!card) return;
+          const nombre = card.querySelector("h3").innerText;
+          const precio = Number(card.querySelector(".price p").innerText.replace(/[^0-9]/g, ""));
+          agregarAlCarrito(nombre, precio);
+        });
+      });
+    };
+  </script>
+
+</body>
+</html>

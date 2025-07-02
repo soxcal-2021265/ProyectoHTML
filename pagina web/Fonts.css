@@ -1,0 +1,60 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Fuente global */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px #000;
+  color: #ff5a2c;
+}
+
+.navbar a {
+  font-weight: 600;
+  color: #fff;
+}
+
+.header-txt h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.header-txt h1 span {
+  color: #ff5a2c;
+}
+
+.header-txt p {
+  font-size: 1.1rem;
+  color: #eee;
+}
+
+.bti,
+.btn-2,
+.btn-3,
+.payment-content button {
+  font-weight: bold;
+  color: white;
+}
+
+.prduct-txt h3 {
+  color: #fff;
+}
+
+.popular h2,
+.product h2,
+.contact h3,
+.payment-content h2 {
+  font-size: 1.5rem;
+  color: #8b2cff;
+}
+
+.close-payment {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
