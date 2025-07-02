@@ -41,9 +41,9 @@ body {
   content: '';
   position: absolute;
   width: 0;
-  height: 3px;
-  background: #ff7733;
-  bottom: -5px;
+  height: 5px;
+  background: #962969;
+  bottom: -7px;
   left: 0;
   transition: 0.3s;
 }
@@ -55,7 +55,7 @@ body {
 /* Header content */
 .header-content {
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 30px;
 }
 
 .butons {
@@ -63,12 +63,12 @@ body {
 }
 
 .bti {
-  background: #ff7733;
-  color: #fff;
+  background: #ebff33;
+  color: #4c30ece0;
   margin: 10px;
   padding: 12px 30px;
   border-radius: 30px;
-  box-shadow: 0 0 15px #ff7733;
+  box-shadow: 0 0 15px #f0de40;
   animation: pulse 1.5s infinite;
   transition: background 0.3s;
 }
