@@ -1,0 +1,283 @@
+/* Variables */
+:root {
+    --primary-color: #4a6fa5;
+    --secondary-color: #166088;
+    --accent-color: #4fc3f7;
+    --dark-color: #2d3142;
+    --light-color: #f5f5f5;
+    --text-color: #333;
+    --text-light: #777;
+    --white: #ffffff;
+    --black: #000000;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+/* Tipografía */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estructura de layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Componentes comunes */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Header */
+.header {
+    background-color: var(--white);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.logo {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    font-weight: 600;
+    position: relative;
+}
+
+.nav a.active {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* Sección de Categorías */
+.categorias {
+    padding: 80px 0;
+}
+
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.categoria {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.categoria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.categoria h3 {
+    padding: 20px 20px 10px;
+    color: var(--primary-color);
+}
+
+/* Sección de Rutinas */
+.rutinas-section {
+    padding: 100px 0 50px;
+}
+
+.rutinas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.rutina-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rutina-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Sección de Consejos */
+.consejos-section {
+    padding: 100px 0 50px;
+}
+
+.consejo-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.consejo-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.consejo-card img {
+    width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 300px;
+}
+
+.consejo-content {
+    width: 60%;
+}
+
+/* Sección de Productos */
+.productos-section {
+    padding: 100px 0 50px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.producto-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.producto-imagen {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Testimonios */
+.testimonios-section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.testimonio {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+    color: var(--white);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .consejo-card, .consejo-card.reverse {
+        flex-direction: column;
+    }
+    
+    .consejo-card img, .consejo-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .grid-categorias, .rutinas-grid, .productos-grid {
+        grid-template-columns: 1fr;
+    }
+}

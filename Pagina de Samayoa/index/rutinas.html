@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutinas - FitHome</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../Fonts/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">FitHome</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="rutinas.html" class="active">Rutinas</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="rutinas-section">
+            <div class="container">
+                <h1>Rutinas de Ejercicio</h1>
+                <div class="filtros">
+                    <button class="btn-filtro active" data-categoria="todas">Todas</button>
+                    <button class="btn-filtro" data-categoria="principiante">Principiantes</button>
+                    <button class="btn-filtro" data-categoria="intermedio">Intermedio</button>
+                    <button class="btn-filtro" data-categoria="avanzado">Avanzado</button>
+                </div>
+
+                <div class="rutinas-grid">
+                    <div class="rutina-card" data-categoria="principiante">
+                        <img src="../Images/Cardio.png" alt="Rutina principiante">
+                        <h3>Rutina Principiante - Cardio</h3>
+                        <p>20 minutos • Quema 150-200 calorías</p>
+                        <button class="btn btn-rutina">Ver Detalles</button>
+                    </div>
+                    <div class="rutina-card" data-categoria="intermedio">
+                        <img src="../Images/DiaDeTorso-1024x1024.jpg" alt="Rutina intermedia">
+                        <h3>Rutina Intermedia - Fuerza</h3>
+                        <p>30 minutos • Todo el cuerpo</p>
+                        <button class="btn btn-rutina">Ver Detalles</button>
+                    </div>
+                    <div class="rutina-card" data-categoria="avanzado">
+                        <img src="../Images/Rutina-de-ejercicios-de-entrenamiento-hiit.webp" alt="Rutina avanzada">
+                        <h3>Rutina Avanzada - HIIT</h3>
+                        <p>45 minutos • Quema 400+ calorías</p>
+                        <button class="btn btn-rutina">Ver Detalles</button>
+                    </div>
+                    <div class="rutina-card" data-categoria="avanzado">
+                        <img src="../Images/Imagen1.jpg" alt="Rutina avanzada">
+                        <h3>Entrenamiento de Fuerza – Cuerpo Completo</h3>
+                        <p>45 minutos • Rutina con pesas o tu propio peso corporal para trabajar todos los grupos musculares.</p>
+                        <button class="btn btn-rutina">Ver Detalles</button>
+                    </div>
+                    <div class="rutina-card" data-categoria="avanzado">
+                        <img src="../Images/Imagen2.jpg" alt="Rutina avanzada">
+                        <h3>Rutina de Abdomen (Core Workout)</h3>
+                        <p>20 minutos • Ideal para tonificar el abdomen y fortalecer la zona lumbar.Mejora la movilidad, flexibilidad y reduce el estrés.</p>
+                        <button class="btn btn-rutina">Ver Detalles</button>
+                    </div>
+                    <div class="rutina-card" data-categoria="avanzado">
+                        <img src="../Images/FDullBody.jpeg" alt="Rutina avanzada">
+                        <h3>Circuito Full Body (con peso corporal)</h3>
+                        <p>35 minutos • Se trabajan todos los músculos sin necesidad de equipo.Enfocada en tren inferior, ideal para fortalecer y tonificar. </p>
+                        <button class="btn btn-rutina">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 FitHome. Todos los derechos reservados Por Hugo Samayoa.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">FB</a>
+                <a href="#" class="social-icon">IG</a>
+                <a href="#" class="social-icon">YT</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Script/script.js"></script>
+</body>
+</html>
