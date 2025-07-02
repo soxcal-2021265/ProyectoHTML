@@ -1,0 +1,138 @@
+/* Estilos generales */
+body {
+    background-color: #f0f0f5;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #001f4d;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Estilo para la barra desplegable */
+header nav select {
+    background-color: #003380;
+    color: #ffffff;
+    padding: 20px 30px;
+    font-size: 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header nav select:hover {
+    background-color: #0044b3;
+    transform: scale(1.03);
+}
+
+header nav select:focus {
+    outline: none;
+    background-color: #005ce6;
+}
+
+header nav select option {
+    background-color: #003380;
+    color: #ffffff;
+}
+
+/* Footer beneficios */
+footer.beneficios {
+    background-color: #001f4d;
+    color: white;
+    padding: 30px 20px;
+}
+
+/* Beneficios en fila */
+.beneficios-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.beneficio {
+    text-align: center;
+    max-width: 200px;
+    padding: 10px;
+}
+
+.beneficio img {
+    margin-bottom: 10px;
+}
+
+.beneficio h4 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+.beneficio p {
+    margin: 0;
+    font-size: 14px;
+    color: #cce0ff;
+}
+
+/* Contacto debajo */
+.contacto {
+    text-align: center;
+    border-top: 1px solid #ffcc00;
+    padding-top: 10px;
+    max-width: 3000px;
+    margin: 0 auto;
+}
+
+.contacto h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.contacto p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #cce0ff;
+}
+
+/* Sección Misión */
+/* Sección Misión */
+section {
+    text-align: center;
+    padding: 50px;
+}
+
+section h2 {
+    font-size: 36px;
+    color: #001f4d;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 22px;
+    line-height: 1.8;
+    color: #333333;
+    max-width: 1000px;
+    margin: 0 auto;
+}
