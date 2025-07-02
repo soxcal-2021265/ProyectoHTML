@@ -1,0 +1,164 @@
+/*Texto de logo inicial*/
+.logo a {
+    color: #fff;
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* opciones de navegacion*/
+.opcionesNav ul {
+    display: flex;/*sigue del logo, ala derecha*/
+    gap: 24px; /*Espacio entre elementos (opciones nav)*/
+    list-style: none; /*Diseño de la lista desordenada (elimina el •)*/
+    margin: 0; /*espacio externo alrededor del contenedor*/
+    padding: 0;
+}
+
+.opcionesNav a {
+    color: #e0e0e0;
+    text-decoration: none; /*quita o agrega decoraciones como subrayado,tachado*/
+    font-size: 1.1rem;/*tamaño de letra*/
+}
+
+.opcionesNav a:hover {
+    color: #4fc3f7;
+    transition: color 0.2s;/*transición suave al cambiar el color*/
+}
+.opcionesNav .opcionSelecionada {
+    position: relative;
+}
+
+.opcionesNav .opcionSelecionada::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 3px;
+    background: #4fc3f7;
+    border-radius: 2px;
+}
+/*Barra navegacion 2 enmedio*/
+.OpcionesSuperiores ul {
+    display: flex;/*sigue del logo, ala derecha*/
+    gap: 94px; /*Espacio entre elementos (opciones nav)*/
+    list-style: none; /*Diseño de la lista desordenada (elimina el •)*/
+    margin: 0; /*espacio externo alrededor del contenedor*/
+    padding: 0;
+}
+
+.OpcionesSuperiores a {
+    color: #e0e0e0;
+    text-decoration: none; /*quita o agrega decoraciones como subrayado,tachado*/
+    justify-content: center;
+    font-size: 1.1rem;/*tamaño de letra*/
+}
+
+.OpcionesSuperiores a:hover {
+    color: #4fc3f7;
+    transition: color 0.2s;/*transición suave al cambiar el color*/
+}
+
+/*Contenido_texto titulo y descripcion */
+.Contenido_texto h1 {
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+}
+
+.Contenido_texto p {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+}
+.tituloProducto {
+    text-align: center;
+    color: #4fc3f7;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 32px 0 24px 0; /* espacio arriba y abajo */
+    letter-spacing: 1px;
+    text-shadow: 0 2px 12px rgba(79,195,247,0.15);
+    width: 100%;
+    /* Si quieres un fondo semitransparente detrás del título: */
+    /* background: rgba(21,24,32,0.7); */
+    /* border-radius: 12px; */
+    /* padding: 12px 0; */
+}
+
+/*Informacion general*/
+.texto-arriba {
+    display: block;
+    color: #A1A4B0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.texto-superpuesto h2 {
+    margin: 0 0 12px 0;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.texto-superpuesto p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 0;
+}
+
+/*opciones de inicio*/
+.opciones p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.price {
+    display: block;
+    color: #4fc3f7;
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.price-after{
+    display: block;
+    color: red;
+    text-decoration: line-through;
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.oferta{
+    display: block;
+    color: #4fc3f7;
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    text-align: center;   
+}
+/*Galeria imagenes*/
+.Clientes h2 {
+    font-size: 2em;
+    color: #fff; /* Tu color para el título */
+}
+/*Productos lentes*/
+.lentes h2 {
+    color: #fff;
+    font-size: 1.2rem; /* Tamaño de fuente ligeramente más grande para el título del producto */
+    margin-bottom: 10px;
+    min-height: 40px; /* Asegura un mínimo de altura para el título, útil si el texto varía */
+}
+
+.lentes .price {
+    color: #4fc3f7;
+    font-weight: bold;
+    font-size: 1.3rem; /* Tamaño de fuente más grande para el precio */
+    margin-bottom: 15px;
+}

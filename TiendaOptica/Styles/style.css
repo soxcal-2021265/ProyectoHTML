@@ -1,0 +1,325 @@
+
+body {
+    background: #151820;;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.contenedorInicio {
+    display: flex; /*alinia el contenedor ala izquierda, los demas a su lado derecho*/
+    justify-content: space-between;/*los elementos se distribuyen su espacio (izquierda -centro-derecha)*/
+    align-items: center;/*centra el los objetos en el contenedor*/
+    background:#23272f; 
+    padding: 0 35px;/*espacio interno, 0 arriba y abajo, 32px a los lados*/
+    height: 80px; /*altura*/
+    width: 100%; /*ancho*/
+    box-sizing: border-box;
+}
+
+
+.logo {
+    display: flex; /*Aliniado ala izquierda por defecto*/
+    align-items: center;
+}
+
+.logoHeader {
+    height: 48px;
+    margin-right: 12px; /*espacio externo ala derecha de los elementos*/
+}
+
+
+
+
+.Preview {
+width: 100%;              /* El ancho será igual al 100% del viewport (pantalla), ocupando todo el ancho visible. */
+min-width: 100%;          /* El ancho mínimo también será el 100% del viewport, evitando que sea más pequeño. */
+margin: 0;                 /* Elimina cualquier espacio externo alrededor del contenedor. */
+padding: 90px 0;           /* Agrega 90px de espacio arriba y abajo, 0 a los lados (espacio interno). */
+background-image: url('../Images/fondo.jpg'); /* Coloca una imagen de fondo. */
+background-size: cover;    /* La imagen de fondo cubre todo el área del contenedor*/
+background-position: center; /* Centra la imagen de fondo en el contenedor. */
+background-repeat: no-repeat; /* Evita que la imagen de fondo se repita. */
+display: flex;             /* Usa Flexbox para organizar los elementos hijos en fila. */
+justify-content: center;   /* Centra los elementos hijos horizontalmente dentro del contenedor. */
+gap: 32px;                 /* Espacio de 32px entre los elementos hijos. */
+box-sizing: border-box;    /* Incluye el padding y el borde dentro del ancho total del contenedor. */
+}
+
+.Contenido_texto {
+    flex: 1; /*abarca todo el espacio asta que exista otro flex*/
+    color: #fff;
+    text-align: left; /*alinia el texto ala izquierda*/
+    margin: 3%;
+}
+
+.btnExplorar {
+    background: #4fc3f7;
+    color: #181a20;
+    border: none;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btnExplorar:hover {
+    background: #0288d1;
+    color: #fff;
+}
+
+/* Responsive para móvil */
+@media (max-width: 900px) {/*regla, para pantallas pequeñas (tablets y celulares de 900px) */
+    .Preview {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        padding: 16px;
+    }
+    .Contenido_texto {
+        text-align: center;
+    }
+    .contenedorInicio {
+        flex-direction: column;
+        height: auto;
+        padding: 12px;
+        gap: 8px;
+    }
+    .opcionesNav ul {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-end;
+    }
+}
+.MenuNavegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 10px;
+    margin: 0 auto 0 auto;
+    padding: 32px;
+    background-color: #23272f;
+    gap: 40px; /*espacio enter elementos*/
+}
+
+.Informacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 42px;
+    gap: 40px;
+}
+
+.conteiner_Texto2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* alinea todo a la izquierda */
+    justify-content: center;
+}
+
+.texto-superpuesto {
+    width: 100%;
+}
+
+
+.contenedor_Imagen2 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contenedor_Imagen2 img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+.SeccionOpciones {
+    background-image: url('../Images/fondolentessol.jpg');
+    background-size: cover;         /* La imagen cubre todo el fondo */
+    background-position: center;    /* Centra la imagen */
+    background-repeat: no-repeat;   /* No se repite */
+    display: flex;
+    justify-content: center;
+    gap: 32px; /* Espacio entre las opciones */
+    padding: 90px 0;
+    background-color: rgba(21, 24, 32, 0.7); /* color oscuro semitransparente */
+    background-blend-mode: darken; /* mezcla el color con la imagen */
+
+}
+
+.opciones {
+    background: #23272f;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    padding: 24px 18px 18px 18px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.opciones img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(79,195,247,0.08);
+    transition: transform 0.3s;
+}
+
+.view-details-btn {
+    background: #4fc3f7;
+    color: #181a20;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 24px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 8px;
+    cursor: pointer;
+    box-shadow: 0 1px 6px rgba(79,195,247,0.10);
+}
+
+.opciones:hover {
+    background: #222b38;
+    transform: translateY(-8px) scale(1.04);
+}
+
+.opciones:hover img {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.opciones:hover .view-details-btn {
+    background: #0288d1;
+    color: #fff;
+}
+.Clientes {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    margin-bottom: 10px; 
+}
+
+
+.contenedorClientes{
+    width: 90%; /* Ajustado para que el contenido tenga más espacio */
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    margin: 0 auto;
+    overflow: hidden; /* Para limpiar floats */
+}
+.GaleriaMovible {
+    display: flex;
+    overflow: hidden;
+    height: 400px; /* Altura ajustada para que no sea excesivamente grande */
+    margin-top: 20px;
+}
+
+.imagen {
+    flex: 1; /* Todos empiezan con el mismo tamaño */
+    transition: flex 0.7s ease, transform 0.7s ease; /* Transición más suave */
+    overflow: hidden;
+    cursor: pointer;
+    position: relative; /* Para el overlay */
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+    transform-origin: center center;
+}
+
+
+.imagen::after {
+    content: attr(alt);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1em;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagen:hover::after {
+    opacity: 1;
+}
+
+.imagen:hover {
+    flex: 4; /* Se expande más en hover */
+}
+
+.imagen:hover img {
+    transform: scale(1.05); /* zoom*/
+}
+.LenteOp {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    padding: 0; /* Elimina cualquier padding redundante si ya lo tienes en otro lado */
+    margin: 42px; /* Elimina cualquier margin redundante */
+}
+
+.lentes {
+    background-color: #23272f;
+    border-radius: 12px;
+    padding: 20px; /* Un poco más de padding para mejor visualización */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Sombra más pronunciada para el efecto de tarjeta */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para hover */
+}
+
+.lentes:hover {
+    transform: translateY(-5px); /* Pequeño levantamiento al pasar el ratón */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* Sombra más grande al pasar el ratón */
+}
+
+.lentes img {
+    width: 100%; /* Asegura que la imagen ocupe el ancho completo de la tarjeta */
+    max-width: 200px; /* Establece un tamaño máximo para las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    margin-bottom: 15px; /* Más espacio debajo de la imagen */
+}
+.lentes:hover img {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.lentes .view-details-btn {
+    display: inline-block; /* Para que el botón ocupe solo el espacio necesario */
+    background: #4fc3f7;
+    color: #181a20;
+    border: none;
+    padding: 10px 30px; /* Más padding para un botón más grande */
+    border-radius: 25px; /* Bordes más redondeados */
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.lentes .view-details-btn:hover {
+    background: #0288d1;
+    color: #fff;
+}
+
